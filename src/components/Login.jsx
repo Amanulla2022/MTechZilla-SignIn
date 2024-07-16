@@ -84,7 +84,11 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-screen flex-col gap-4">
+      <h1 className="flex justify-center items-center gap-4 text-2xl font-semibold border-2 p-2 bg-black text-white">
+        <span>Login With Email and Password or Signin With Google!</span>
+        <FcGoogle />
+      </h1>
       <div className="bg-gray-100 shadow-md rounded-lg p-6 lg:w-2/5 w-full border-gray-500 border-2 flex flex-col items-center gap-4">
         {error && <p className="text-red-500 mb-4">{error}</p>}
 
